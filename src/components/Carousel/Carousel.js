@@ -1,4 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
+import "./Carousel.css";
 
 function CarouselTop() {
     return (
@@ -10,8 +11,8 @@ function CarouselTop() {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
+                    <p className="text-start">Detalles subtitulo</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>

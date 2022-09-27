@@ -7,7 +7,12 @@ const NavBar = () => {
         <Navbar bg="dark" variant="dark" className="sticky-top">
             <Container>
                 <Navbar.Brand href="#home">
-                    Tecno Store
+                    <img
+                        className="logo"
+                        width="200px"
+                        src="./image/tecno_store_logo_deg.png"
+                        alt="logo"
+                    />
                 </Navbar.Brand>
                 <Nav className="me-auto">      
                     <Nav.Link href="#home">Inicio</Nav.Link>
