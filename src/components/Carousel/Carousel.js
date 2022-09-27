@@ -6,7 +6,7 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://www.malvinasargentinas.gob.ar/web/plugins/elastic/imgdata/FILE_C54B8B-E35E6D-3C47E1-CF545E-030CBD-91A5E4.jpg"
+                    src="./image/top2.webp"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -17,7 +17,7 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://www.malvinasargentinas.gob.ar/web/plugins/elastic/imgdata/FILE_C54B8B-E35E6D-3C47E1-CF545E-030CBD-91A5E4.jpg"
+                    src="./image/top3.webp"
                     alt="Second slide"
                 />
 
@@ -29,7 +29,77 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="./top_caballos2.jpg"
+                    src="./image/top4.webp"
+                    alt="Third slide"
+                />
+
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="./image/top5.webp"
+                    alt="Third slide"
+                />
+
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="./image/top6.webp"
+                    alt="Third slide"
+                />
+
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="./image/top7.webp"
+                    alt="Third slide"
+                />
+
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="./image/top8.webp"
+                    alt="Third slide"
+                />
+
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="./image/top9.webp"
                     alt="Third slide"
                 />
 

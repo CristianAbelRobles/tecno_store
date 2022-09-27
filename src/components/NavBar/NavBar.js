@@ -4,7 +4,7 @@ import "../CartWidget/CartWidget.css";
 
 const NavBar = () => {
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" className="sticky-top">
             <Container>
                 <Navbar.Brand href="#home">
                     Tecno Store
