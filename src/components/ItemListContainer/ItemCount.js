@@ -1,13 +1,12 @@
 import { useState } from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image'
 import './itemCount.css'; 
 
 const ItemCount = () => {
     const item = {
         id: 1,
-        Nombre: "Teclado Corsair",
+        nombre: "Teclado Corsair",
         Url:"https://www.muycomputer.com/wp-content/uploads/2020/10/Corsair-1.jpg",
         Categoria: "Teclados",
         Detalle: "El K60 RGB PRO, equipado con las nuevas teclas CHERRY VIOLA, ofrece a los jugadores la precisión, el tacto y la fiabilidad que solo ofrecen los teclados mecánicos.",
@@ -30,7 +29,7 @@ const ItemCount = () => {
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={item.Url} />
                 <Card.Body>
-                    <Card.Title>{item.Nombre}</Card.Title>
+                    <Card.Title>{item.nombre}</Card.Title>
                     <Card.Text>
                         {item.Detalle}
                     </Card.Text>
@@ -40,7 +39,6 @@ const ItemCount = () => {
                     <Card.Text>
                         Unidades
                     </Card.Text>
-
                     <div className="d-flex justify-content-around">
                         <Button onClick={incCount} variant="outline-primary"> + Agregar</Button>
                         <Button onClick={decCount} variant="outline-danger"> - Quitar</Button>
