@@ -9,15 +9,16 @@ const Item = ( { product }) => {
                 <Card.Body>
                     <Card.Title>{product.nombre}</Card.Title>
                     <Card.Text>
-                        {product.Detalle}
+                        {product.categoria}
                     </Card.Text>
                     <Card.Text>
-                        Unidades
+                        {product.detalle}
                     </Card.Text>
                     <div className="d-flex justify-content-around">
                         <Button variant="outline-primary"> + Agregar</Button>
                         <Button variant="outline-danger"> - Quitar</Button>
                     </div>
+                    <Button variant="outline-success"> Agregar al Carrito</Button>
                 </Card.Body>
             </Card>
         </>

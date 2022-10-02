@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Carousel from './components/Carousel/Carousel';
 import Footer from './components/Footer/Footer';
+import PokemonListContainer from './components/PokemonContainer/PokemonListContainer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Carousel />
       <ItemListContainer greeting={"Bienvenidos a la tienda"}/>
       {/* <Accordion /> */}
+      <PokemonListContainer />
       <Footer/>
     </div>
   );
