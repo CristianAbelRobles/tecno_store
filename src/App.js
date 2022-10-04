@@ -2,21 +2,31 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // CSS DE BOOTSTRAP
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Carousel from './components/Carousel/Carousel';
 import Footer from './components/Footer/Footer';
-import PokemonListContainer from './components/PokemonContainer/PokemonListContainer';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout';
+import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Carousel />
-      <ItemListContainer greeting={"Bienvenidos a la tienda"}/>
-      {/* <Accordion /> */}
-      <PokemonListContainer />
+      <BrowserRouter >
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<ItemListContainer greeting={'Bienvenidos a mi tienda'} />} />
+          <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Bienvenidos a mi tienda'} />} />
+          <Route path='/item/:id' element={<ItemDetailContainer />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/checkout' element={<Checkout />} />
+        </Routes>
+      </BrowserRouter>
       <Footer/>
     </div>
   );
 }
 
 export default App;
+
+

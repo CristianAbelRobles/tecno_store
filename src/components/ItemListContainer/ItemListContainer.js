@@ -1,19 +1,33 @@
 import './ItemListContainer.css';
 import Container from 'react-bootstrap/Container';
+import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
-
-const products = [
-  {id: 1, nombre: "Teclado Corsair", url:"https://www.muycomputer.com/wp-content/uploads/2020/10/Corsair-1.jpg", categoria: "Teclados", detalle: "El K60 RGB PRO, equipado con las nuevas teclas CHERRY VIOLA, ofrece a los jugadores la precisión, el tacto y la fiabilidad que solo ofrecen los teclados mecánicos.", precio: 100, stock: 10},
-  {id: 2, nombre: "Teclado Red Dragon", url:"https://redragon.es/content/uploads/2021/04/Harpe-Pro-K503-Desktop1356x890-7.jpg", categoria: "Teclados", detalle: "El K60 RGB PRO, equipado con las nuevas teclas CHERRY VIOLA, ofrece a los jugadores la precisión, el tacto y la fiabilidad que solo ofrecen los teclados mecánicos.", precio: 100, stock: 10},
-  {id: 3, nombre: "Teclado Logitech", url:"https://i.ytimg.com/vi/bEOVVD7pW2I/maxresdefault.jpg", categoria: "Teclados", detalle: "El K60 RGB PRO, equipado con las nuevas teclas CHERRY VIOLA, ofrece a los jugadores la precisión, el tacto y la fiabilidad que solo ofrecen los teclados mecánicos.", precio: 100, stock: 10}
-];
+import { useParams } from 'react-router-dom';
+import { getAllProducts, getProductsByCategory } from '../../utils/Products';
+import { Carousel } from 'react-bootstrap';
 
 const ItemListContainer = ({ greeting }) => {
+  const { categoryId } = useParams();
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    if (categoryId) {
+      getProductsByCategory(categoryId)
+        .then((data) => setProducts(data))
+        .catch((error) => console.warn(error))
+    } else {
+      getAllProducts()
+        .then((data) => setProducts(data))
+        .catch((error) => console.warn(error))
+    }
+  }, [categoryId])
+
   return (
     <Container>
+      <Carousel/>
       <h1>Productos</h1>
       <h3 className="greeting">{greeting}</h3>
-      <ItemList products={products}/>
+      <ItemList products={products} />
     </Container>
   );
 }

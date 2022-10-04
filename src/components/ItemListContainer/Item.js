@@ -1,5 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 const Item = ( { product }) => {
     return (
@@ -13,6 +14,13 @@ const Item = ( { product }) => {
                     </Card.Text>
                     <Card.Text>
                         {product.detalle}
+                    </Card.Text>
+                    <Card.Text>
+                        <Link to={`/item/${product.id}`}>
+                            <Button variant="primary">
+                            Ver detalle
+                            </Button>
+                        </Link>
                     </Card.Text>
                     <div className="d-flex justify-content-around">
                         <Button variant="outline-primary"> + Agregar</Button>
