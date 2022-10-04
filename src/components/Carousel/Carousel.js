@@ -7,7 +7,7 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="./image/top2.webp"
+                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top2.webp"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -18,24 +18,24 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="./image/top3.webp"
+                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top3.webp"
                     alt="Second slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
+                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="./image/top4.webp"
+                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top4.webp"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
+                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
                     <p>
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
@@ -44,12 +44,12 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="./image/top5.webp"
+                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top5.webp"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
+                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
                     <p>
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
@@ -58,12 +58,12 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="./image/top6.webp"
+                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top6.webp"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
+                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
                     <p>
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
@@ -72,12 +72,12 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="./image/top7.webp"
+                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top7.webp"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
+                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
                     <p>
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
@@ -86,12 +86,12 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="./image/top8.webp"
+                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top8.webp"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
+                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
                     <p>
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
@@ -100,12 +100,12 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="./image/top9.webp"
+                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top9.webp"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
+                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
                     <p>
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
