@@ -21,6 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage":"https://cristianabelrobles.github.io/tecno_store/",
   "eslintConfig": {
     "extends": [
       "react-app",

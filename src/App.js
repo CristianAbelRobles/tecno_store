@@ -12,7 +12,7 @@ import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter >
+      <BrowserRouter basename='/tecno_store'>
         <NavBar />
         <Routes>
           <Route path='/' element={<ItemListContainer greeting={'Bienvenidos a mi tienda'} />} />
