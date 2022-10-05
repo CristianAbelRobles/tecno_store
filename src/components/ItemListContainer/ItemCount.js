@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import './itemCount.css'; 
 
@@ -25,27 +24,13 @@ const ItemCount = () => {
     }
 
     return (
-        <>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={item.Url} />
-                <Card.Body>
-                    <Card.Title>{item.nombre}</Card.Title>
-                    <Card.Text>
-                        {item.Detalle}
-                    </Card.Text>
-                    <Card.Text className="numItemCount">
-                        {Count}
-                    </Card.Text>
-                    <Card.Text>
-                        Unidades
-                    </Card.Text>
-                    <div className="d-flex justify-content-around">
-                        <Button onClick={incCount} variant="outline-primary"> + Agregar</Button>
-                        <Button onClick={decCount} variant="outline-danger"> - Quitar</Button>
-                    </div>
-                </Card.Body>
-            </Card>
-        </>
+        <div className="">
+            <Button onClick={decCount} variant="outline-primary fs-4"> - </Button>
+            <label className="fs-3" style={{ width: '4rem' }}>
+                {Count}
+            </label>
+            <Button onClick={incCount} variant="outline-primary fs-4"> + </Button>
+        </div>
     )
 }
 

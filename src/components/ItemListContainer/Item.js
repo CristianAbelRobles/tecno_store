@@ -1,6 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+// import ItemCount from './ItemCount';     // TODAVIA NO DEFINO SI VOY A MOSTRAR EL CONTADOR EN CADA TARJETA, POR AHORA SOLO LO VOY A MOSTRAR EN EL ITEMDETAIL
 
 const Item = ( { product }) => {
     return (
@@ -16,17 +17,17 @@ const Item = ( { product }) => {
                         {product.detalle}
                     </Card.Text>
                     <Card.Text>
+                        <span className="fs-5">Precio $ {product.price}</span>
+                    </Card.Text>
+                    <Card.Text>
                         <Link to={`/item/${product.id}`}>
-                            <Button variant="primary">
+                            <Button variant="primary" style={{ width: '10rem' }}>
                             Ver detalle
                             </Button>
                         </Link>
                     </Card.Text>
-                    <div className="d-flex justify-content-around">
-                        <Button variant="outline-primary"> + Agregar</Button>
-                        <Button variant="outline-danger"> - Quitar</Button>
-                    </div>
-                    <Button variant="outline-success"> Agregar al Carrito</Button>
+                    {/* <ItemCount product={product} /> */}
+                    <Button variant="outline-success" style={{ width: '10rem' }}> Agregar al Carrito</Button>
                 </Card.Body>
             </Card>
         </>
