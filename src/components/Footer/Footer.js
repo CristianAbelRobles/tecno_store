@@ -13,10 +13,24 @@ const Footer = () => {
                         <span>Sitio Creado con React por Cristian Robles - Todos los derechos reservados</span>
                     </div>
                     <div className="footer__redes">
-                        <RiFacebookBoxFill />
-                        <RiInstagramLine />
-                        <RiYoutubeLine />
-                        <RiTwitterLine />
+                        <ul class="wrapper">
+                            <li class="icon facebook">
+                                <span class="tooltip">Facebook</span>
+                                <span><RiFacebookBoxFill /></span>
+                            </li>
+                            <li class="icon twitter">
+                                <span class="tooltip">Twitter</span>
+                                <span><RiInstagramLine /></span>
+                            </li>
+                            <li class="icon instagram">
+                                <span class="tooltip">Instagram</span>
+                                <span><RiYoutubeLine /></span>
+                            </li>
+                            <li class="icon instagram">
+                                <span class="tooltip">Instagram</span>
+                                <span><RiTwitterLine /></span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </footer>
@@ -24,3 +38,8 @@ const Footer = () => {
 };
 
 export default Footer;
+
+                        
+                        
+                        
+                        

@@ -6,7 +6,7 @@ const CartWidget = () => {
   return (
     <Link to="/cart">
       <RiShoppingCart2Line />
-      </Link>
+    </Link>
   );
 };
 

@@ -1,8 +1,17 @@
+import { useState } from "react";
 import { Button, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import ItemCount from "../ItemListContainer/ItemCount";
 
-
 const ItemDetail = ({ product }) => {
+    const [count, setCount] = useState(0);
+    const [showItemCount, setShowItemCount] = useState(true)
+
+    const handleAdd = (value)=> {
+        setCount(value);
+        setShowItemCount(false);
+    };
+
     return (
     <Container className="d-flex justify-content-around">
         <div className="card mb-3">
@@ -17,13 +26,18 @@ const ItemDetail = ({ product }) => {
                         <p className="card-text text-bg-info">Código del producto : {product.id}</p>
                         <p className="card-text">{product.detalle}</p>
                         <p className="card-text">Precio efectivo o transferencia ${product.price}</p>
-                        
                         <p className="card-text"><small className="text-muted">{product.categoria}</small></p>
                         <div>
-                            <ItemCount />
-                            <div className="mt-3">
-                                <Button variant="outline-success"> Agregar al Carrito</Button>
-                            </div>
+                            {showItemCount && (<ItemCount
+                                initial={1}
+                                stock={10}
+                                onAdd={handleAdd}
+                            />)}
+                            {!showItemCount && (
+                                <Link to="/cart" className="mt-3">
+                                    <Button variant="outline-success"> Terminar Compra</Button>
+                                </Link>
+                            )}
                         </div>
                     </div>
                     
@@ -35,3 +49,7 @@ const ItemDetail = ({ product }) => {
 }
 
 export default ItemDetail;
+
+
+
+            

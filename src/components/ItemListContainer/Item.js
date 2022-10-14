@@ -1,6 +1,8 @@
+import { RiShoppingCart2Line } from "react-icons/ri";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import "./item.css";
 // import ItemCount from './ItemCount';     // TODAVIA NO DEFINO SI VOY A MOSTRAR EL CONTADOR EN CADA TARJETA, POR AHORA SOLO LO VOY A MOSTRAR EN EL ITEMDETAIL
 
 const Item = ( { product }) => {
@@ -21,13 +23,10 @@ const Item = ( { product }) => {
                     </Card.Text>
                     <Card.Text>
                         <Link to={`/item/${product.id}`}>
-                            <Button variant="primary" style={{ width: '10rem' }}>
-                            Ver detalle
-                            </Button>
+                            <button className='buttonCustom'>VER DETALLE <span></span></button>
                         </Link>
                     </Card.Text>
-                    {/* <ItemCount product={product} /> */}
-                    <Button variant="outline-success" style={{ width: '10rem' }}> Agregar al Carrito</Button>
+                    
                 </Card.Body>
             </Card>
         </>
