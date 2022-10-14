@@ -13,21 +13,21 @@ const Footer = () => {
                         <span>Sitio Creado con React por Cristian Robles - Todos los derechos reservados</span>
                     </div>
                     <div className="footer__redes">
-                        <ul class="wrapper">
-                            <li class="icon facebook">
-                                <span class="tooltip">Facebook</span>
+                        <ul className="wrapper">
+                            <li className="icon facebook">
+                                <span className="tooltip">Facebook</span>
                                 <span><RiFacebookBoxFill /></span>
                             </li>
-                            <li class="icon twitter">
-                                <span class="tooltip">Twitter</span>
+                            <li className="icon twitter">
+                                <span className="tooltip">Twitter</span>
                                 <span><RiInstagramLine /></span>
                             </li>
-                            <li class="icon instagram">
-                                <span class="tooltip">Instagram</span>
+                            <li className="icon instagram">
+                                <span className="tooltip">Instagram</span>
                                 <span><RiYoutubeLine /></span>
                             </li>
-                            <li class="icon instagram">
-                                <span class="tooltip">Instagram</span>
+                            <li className="icon instagram">
+                                <span className="tooltip">Instagram</span>
                                 <span><RiTwitterLine /></span>
                             </li>
                         </ul>
