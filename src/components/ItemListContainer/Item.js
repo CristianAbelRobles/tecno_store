@@ -8,18 +8,23 @@ import "./item.css";
 const Item = ( { product }) => {
     return (
         <>
-            <Card className="my-2" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={product.url} />
+            <Card className="my-2 borderCustom" style={{ width: '18rem' }}>
+                <div className="overflow">
+                    <Card.Img variant="top" src={product.pictureUrl} />
+                </div>
                 <Card.Body>
-                    <Card.Title>{product.nombre}</Card.Title>
+                    <Card.Title>{product.name}</Card.Title>
                     <Card.Text>
-                        {product.categoria}
+                        {product.category}
                     </Card.Text>
-                    <Card.Text>
-                        {product.detalle}
-                    </Card.Text>
+                    {/* <Card.Text>
+                        {product.detail}
+                    </Card.Text> */}
                     <Card.Text>
                         <span className="fs-5">Precio $ {product.price}</span>
+                    </Card.Text>
+                    <Card.Text>
+                        <span className="fs-5">Disponibles {product.stock}</span>
                     </Card.Text>
                     <Card.Text>
                         <Link to={`/item/${product.id}`}>

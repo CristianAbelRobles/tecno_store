@@ -10,8 +10,9 @@ import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 import { CartProvider } from './contexts/CartContext';
 
 function App() {
+  
   return (
-    <div className="App">
+    <>
       <BrowserRouter basename='/tecno_store'>
           <CartProvider>
             <NavBar />
@@ -25,7 +26,7 @@ function App() {
           </CartProvider>
       </BrowserRouter>
       <Footer/>
-    </div>
+    </>
   );
 }
 
