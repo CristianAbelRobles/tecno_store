@@ -28,7 +28,7 @@ const ItemDetailContainer = () => {
                 </Container>
             ) : (
                 <Container>
-                    <h1>Detalle del Producto</h1>
+                    <h1 className="text-center my-5">DETALLE DEL PRODUCTO</h1>
                     {product && <ItemDetail product={product} />}
                 </Container> 
             )}  
