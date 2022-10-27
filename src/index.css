@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +19,127 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* MODIFICACIONES DE BOOTSTRAP */
+
+.card {
+  border-radius: 0;
+}
+
+/* BOTONES */
+
+.btn {
+  display: block;
+  border-radius: 0;
+}
+
+.customButomBlue {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #0099cc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 3px solid #0099cc;
+  border-radius: 0;
+  background: rgb(255, 255, 255);
+}
+
+.customButomBlue:hover {
+  border: 3px solid #0099cc;
+  background: #0099cc;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.customButomRed {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #b20058;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 3px solid #b20058;
+  background: rgb(255, 255, 255);
+}
+
+.customButomRed:hover {
+  border: 3px solid #b20058;
+  background: #b20058;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.customButomPurple {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #6b238e;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 96%;
+  border: 3px solid #6b238e;
+  background: rgb(255, 255, 255);
+}
+
+.customButomPurple:hover {
+  border: 3px solid #6b238e;
+  background: #6b238e;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.customButomGreen {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #99cc00;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 3px solid #99cc00;
+  background: rgb(255, 255, 255);
+}
+
+.customButomGreen:hover {
+  border: 3px solid #99cc00;
+  background: #99cc00;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.customButomWhite {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 3px solid #ffffff;
+  background: rgb(0, 0, 0);
+}
+
+.customButomWhite:hover {
+  border: 3px solid #ffffff;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.customButomBlack {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000000;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 3px solid #000000;
+  background: rgb(255, 255, 255);
+}
+
+.customButomBlack:hover {
+  border: 3px solid #000000;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.7s ease 0s;
 }

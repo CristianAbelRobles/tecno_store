@@ -1,37 +1,19 @@
-import { useContext } from "react";
-import CartContext from "../../contexts/CartContext";
 import { Alert, Button, Form, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import './orderModal.css';
 
-const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail, setNombre, setTel, isDisabled }) => {
-  const { cart, total } = useContext(CartContext);
+const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail, setNombre, setTel, isDisabled, orderProcess, mostrarSpinner, ocultarSpinner }) => {
+
   return (
-    <Modal size="lg" show={showModal} onHide={onClose}>
+    <Modal show={showModal} onHide={onClose}>
       <Modal.Header className="bg-success" closeButton>
         <Modal.Title className="text-white text-center">
           {!orderId ? ("FINALIZAR COMPRA"):("¡COMPRA REALIZADA!")}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-      {!orderId && (
-        <>
-        <div class="container-fluid">
-          <div class="row justify-content-around">
-            <div class="col-md-6 d-flex flex-column justify-content-center">
-              <h4>PRODUCTOS:</h4>
-              <ul class="">
-                  {cart.map((item) => (
-                    <li key={item.id}>
-                      <span className="mx-1">{item.quantity}</span>
-                      <span className="mx-1">$ {item.price}</span>
-                      <span className="mx-1">{item.name}</span>
-                    </li>
-                  ))}
-              </ul>
-              <h5 className="my-2">Total: $ {total}</h5>
-            </div>
-            <div class="col-md-6 border-left border-danger">
+        {!orderId && (
+          <>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Nombre</Form.Label>
               <Form.Control 
@@ -72,14 +54,11 @@ const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail
                 onChange={ev => setTel (ev.target.value)}
                 />
             </Form.Group>
-            </div>
-          </div>
-        </div>
-            <Form.Group className="my-2 text-center" controlId="formBasicEmail">
-                  <Button className="fs-4 mx-1" variant="danger" onClick={onClose}>
+            <Form.Group className="my-2 d-flex justify-content-around" controlId="formBasicEmail">
+                  <Button className="fs-4" variant="danger" onClick={onClose}>
                     CANCELAR
                   </Button>
-                  <Button className="fs-4 mx-1" disabled={isDisabled} variant="success" onClick={onBuy}>
+                  <Button className="fs-4" disabled={isDisabled} variant="success" onClick={onBuy}>
                     COMPRAR
                   </Button>
             </Form.Group>
@@ -101,7 +80,6 @@ const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail
             </Modal.Footer>
           </div>
         )}
-      
     </Modal>
   );
 }

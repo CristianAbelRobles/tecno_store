@@ -28,16 +28,14 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <>
         {loading ? (
-            <Container className="text-center">
-                <Button className="m-5" variant="success" disabled>
-                    <Spinner as="span" animation="border" size="lg" role="status" aria-hidden="true" />L O A D I N G ...
-                </Button>
-            </Container>
+          <Container className="text-center">
+            <Spinner as="span" animation="border" size="lg" role="status" aria-hidden="true" /> CARGANDO PRODUCTOS ...
+          </Container>
         ) : (
           <Container>
-          <h1>Productos</h1>
-          <h3 className="greeting">{greeting}</h3>
-          <ItemList products={products} />
+            <h1 className='mt-3 top_title text-center'>PRODUCTOS</h1>
+            <h3 className="greeting text-center">{greeting}</h3>
+            <ItemList products={products} />
         </Container>
         )}  
     </> 

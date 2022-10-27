@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Button, Container, Table } from "react-bootstrap";
+import { Container, Table } from "react-bootstrap";
 import { BsTrash } from "react-icons/bs";
 import Card from 'react-bootstrap/Card';
 import CartContext from "../../contexts/CartContext";
@@ -10,17 +10,26 @@ import { createOrder } from "../../utils/orders";
 import OrderModal from "../OrderModal/OrderModal";
 import './cart.css'; 
 
+const buyerMock = {
+  name: 'cristian',
+  phone: '1132316444',
+  email: 'cristian@gmail.com'
+}
+
 const Cart = () => {
-  const { cart, total, removeItem, clear } = useContext(CartContext);
 
   const [mail, setMail] = useState("");
   const [repeatMail, setRepeatMail] = useState("");
   const [nombre, setNombre] = useState("");
   const [tel, setTel] = useState("");
-  const [showModal, setShowModal] = useState(false);
-  const [orderId, setOrderId] = useState();
 
   const isDisabled = mail !== repeatMail || mail === '' ||  repeatMail === '' || nombre === '' || tel === '';
+
+  const { cart, total, removeItem, clear } = useContext(CartContext);
+  const [user, setUser] = useState(buyerMock);
+  const [showModal, setShowModal] = useState(false);
+  const [orderId, setOrderId] = useState();
+  const [orderProcess, setOrderProcess] = useState(false)
 
   const handleRemove = (itemId) => {
     removeItem(itemId);
@@ -31,14 +40,15 @@ const Cart = () => {
   const handleClose = () => setShowModal(false);
 
   const handleBuy = async () => {
+    setOrderProcess(true)
     const newOrder = {
-      buyer: {nombre, mail, tel},
+      buyer: buyerMock,
       items: cart,
-      estado: "generada",
       total
     };
     const newOrderId = await createOrder(newOrder);
     setOrderId(newOrderId);
+    setOrderProcess(false)
     clear();
   }
 
@@ -82,9 +92,9 @@ const Cart = () => {
             <button onClick={() => { clear() }} className="mx-3 customButtomRed">
                 VACIAR CARRITO
             </button>
-            <Button as={Link} to="/" className="mx-3 customButtomBlue">
+            <button as={Link} to="/" className="mx-3 customButtomBlue">
                 SEGUIR COMPRANDO
-            </Button>
+            </button>
             <button variant="success" className="mx-3 customButtomGreen" onClick={handleOpen}>
               TERMINAR COMPRA
             </button>
@@ -96,9 +106,13 @@ const Cart = () => {
         <CartEmpty/>
       )}
       <OrderModal
+        mail={mail}
         setMail={setMail}
+        repeatMail={repeatMail}
         setRepeatMail={setRepeatMail}
+        nombre={nombre}
         setNombre={setNombre}
+        tel={tel}
         setTel={setTel}
         isDisabled={isDisabled}
         showModal={showModal}

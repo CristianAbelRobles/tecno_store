@@ -22,9 +22,7 @@ const ItemDetailContainer = () => {
         <>
             {loading ? (
                 <Container className="text-center">
-                    <Button className="m-5" variant="success" disabled>
-                        <Spinner as="span" animation="border" size="lg" role="status" aria-hidden="true" />L O A D I N G ...
-                    </Button>
+                    <Spinner as="span" animation="border" size="lg" role="status" aria-hidden="true" />CARGANDO PRODUCTO ...
                 </Container>
             ) : (
                 <Container>

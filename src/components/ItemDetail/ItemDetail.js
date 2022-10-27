@@ -3,6 +3,7 @@ import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import CartContext from "../../contexts/CartContext";
 import ItemCount from "../ItemListContainer/ItemCount";
+import "./itemDetail.css";
 
 const ItemDetail = ({ product }) => {
     const { addItem } = useContext (CartContext)
@@ -22,15 +23,14 @@ const ItemDetail = ({ product }) => {
                 <div className="col-md-8">
                     <img src={product.pictureUrl} className="img-fluid rounded-start" alt="..."/>
                 </div>
-                <div className="col-md-4 d-flex flex-column align-items-center">
+                <div className="col-md-4 d-flex flex-column text-center">
                     <div className="card-body">
                         <h2 className="card-title">{product.name}</h2>
-                        <p className="card-text"><small className="text-muted">{product.category}</small></p>
                         <p className="card-text text-bg-info">Código del producto : {product.id}</p>
                         <p className="card-text">Cantidad Disponible : {product.stock}</p>
                         <p className="card-text">{product.detail}</p>
                         <p className="card-text">Precio efectivo o transferencia ${product.price}</p>
-                        <div>
+                        <div className="text-center">
                             {
                                 product.stock > 0 ? (
                                     showItemCount ? (
@@ -41,15 +41,20 @@ const ItemDetail = ({ product }) => {
                                             ) : (
                                                 <>
                                                     <Link to="/cart" className="mt-3">
-                                                        <Button variant="outline-success"> Terminar Compra</Button>
+                                                        <Button variant="success" className='customButomGreen'> TERMINAR COMPRA</Button>
                                                     </Link>
                                                     <Link to="/" className="mt-3">
-                                                        <Button variant="primary"> Seguir Comprando</Button>
+                                                        <Button className='customButomBlue'> SEGUIR COMPRANDO</Button>
                                                     </Link>
                                                 </>
                                             )
                                     ) : (
-                                        <span className="fs-3 bg-danger">Sin Stock Disponible</span>
+                                        <>
+                                            <span className="fs-3 bg-danger">Sin Stock Disponible</span>
+                                            <Link to="/" className="mt-3 text-center">
+                                                <Button className='customButomBlue'> SEGUIR COMPRANDO</Button>
+                                            </Link>
+                                        </>
                                 )
                             }
                         </div>
@@ -63,37 +68,6 @@ const ItemDetail = ({ product }) => {
 }
 
 export default ItemDetail;
-
-
-
-
-{/*                     showItemCount && (
-                                <ItemCount 
-                                    stock={product.stock} 
-                                    initial={1} 
-                                    onAdd={handleAdd} />
-                            )
-                        !showItemCount && (
-                                <Link to="/cart" className="mt-3">
-                                    <Button variant="outline-success"> Terminar Compra</Button>
-                                </Link>
-                            )
-                        </div> 
-                    */}
-{/*                     <div>
-                            {showItemCount && (
-                                <ItemCount 
-                                    stock={product.stock} 
-                                    initial={1} 
-                                    onAdd={handleAdd} />
-                            )}
-                            {!showItemCount && (
-                                <Link to="/cart" className="mt-3">
-                                    <Button variant="outline-success"> Terminar Compra</Button>
-                                </Link>
-                            )}
-                        </div> 
-                    */}
 
 
             

@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import './itemCount.css'; 
+import { Link } from 'react-router-dom';
 
 const ItemCount = ({ initial, stock, onAdd }) => {
     const [count, setCount] = useState(parseInt(initial));
@@ -20,21 +20,44 @@ const ItemCount = ({ initial, stock, onAdd }) => {
     },[initial])
 
     return (
-        <div>
-            <div className="">
-                <Button onClick={handleSubtract} variant="outline-primary fs-4" disabled={count <= initial}> - </Button>
-                    <label className="fs-3" style={{ width: '4rem' }}>
-                        {count}
-                    </label>
-                <Button onClick={handleAdd} variant="outline-primary fs-4" disabled={count >= stock}> + </Button>
+        <div className='d-flex flex-column'>
+            <div className="d-flex countContainer justify-content-center mb-2">
+                <div className="d-flex">
+                    <Button onClick={handleSubtract} className='customButomBlue buttomCount' disabled={count <= initial}> - </Button>
+                    <div className='d-flex text-center justify-content-center align-items-center'>
+                        <label className='fs-3' style={{ width: '10rem' }}>
+                            {count}
+                        </label>
+                    </div>
+                    <Button onClick={handleAdd} className='customButomBlue buttomCount' disabled={count >= stock}> + </Button>
+                </div>
             </div>
-            <div>
-                <Button variant="primary" disabled={count <= 0} onClick={handleClick}>
-                    Agregar al  Carrito
+            <Button variant="success" className='customButomGreen' disabled={count <= 0} onClick={handleClick}>
+                AGREGAR AL CARRITO
+            </Button>
+            <Link to='/'>
+                <Button className='customButomBlue' >
+                    VOLVER
                 </Button>
-            </div>
+            </Link>
         </div>
     )
 }
+
+
+
+        // <div>
+        //     <div className="">
+        //         <Button onClick={handleSubtract} variant="outline-primary fs-4" disabled={count <= initial}> - </Button>
+        //             <label className="fs-3" style={{ width: '4rem' }}>
+        //                 {count}
+        //             </label>
+        //         <Button onClick={handleAdd} variant="outline-primary fs-4" disabled={count >= stock}> + </Button>
+        //     </div>
+        //     <div>
+        //         <Button className='customButomBlue'disabled={count <= 0} onClick={handleClick}> AGREGAR AL CARRITO</Button>
+        //     </div>
+        // </div>
+
 
 export default ItemCount

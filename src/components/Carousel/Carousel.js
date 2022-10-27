@@ -7,109 +7,51 @@ function CarouselTop() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top2.webp"
+                    src="https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/top_1.jpg?alt=media&token=ce509814-8a43-4730-b99b-8f534a37e67a"
                     alt="First slide"
                 />
-                <Carousel.Caption>
-                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
-                    <p className="text-start">Detalles subtitulo</p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top3.webp"
+                    src="https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/top_2.jpg?alt=media&token=24753a74-2e7a-47c1-aab0-b95c6512a432"
                     alt="Second slide"
                 />
-
-                <Carousel.Caption>
-                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top4.webp"
+                    src="https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/top_3.jpg?alt=media&token=98a440c8-3b11-4351-b69c-2f36b3ae4c19"
                     alt="Third slide"
                 />
-
-                <Carousel.Caption>
-                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top5.webp"
+                    src="https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/top_4.jpg?alt=media&token=a2d0f9b1-f1b9-47c4-9d2a-682d4eb4e1d0"
                     alt="Third slide"
                 />
-
-                <Carousel.Caption>
-                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top6.webp"
+                    src="https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/top_5.jpg?alt=media&token=239ac3b8-d02d-45d3-9220-b0baa1ac1270"
                     alt="Third slide"
                 />
-
-                <Carousel.Caption>
-                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top7.webp"
+                    src="https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/top_6.jpg?alt=media&token=1f0b39b4-656f-49d5-859d-a060897ca02f"
                     alt="Third slide"
                 />
-
-                <Carousel.Caption>
-                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top8.webp"
+                    src="https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/top_7.jpg?alt=media&token=f0093ab6-bcbd-48cf-8500-bd12e6730e9a"
                     alt="Third slide"
                 />
-
-                <Carousel.Caption>
-                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/src/img/top9.webp"
-                    alt="Third slide"
-                />
-
-                <Carousel.Caption>
-                    <h2 className="text-start titulo__top">TITULO IZQUIERDA</h2>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
     );

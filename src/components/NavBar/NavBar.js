@@ -12,8 +12,8 @@ const NavBar = () => {
                     <Navbar.Brand as={Link} to='/'>
                         <img
                             className="logo"
-                            width="200px"
-                            src="https://raw.githubusercontent.com/CristianAbelRobles/tecno_store/main/public/image/tecno_store_logo_deg.png"
+                            width="300px"
+                            src="https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/tecno-store-logo.png?alt=media&token=8c211d7a-b45f-4cb8-9eaf-cda40fec4ec8"
                             alt="logo"
                         />
                     </Navbar.Brand>
