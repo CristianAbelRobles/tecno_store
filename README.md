@@ -32,7 +32,7 @@ Utiliza una serie de librerías externas (detalladas abajo).
 Cristian Robles - [Repositorio](https://github.com/CristianAbelRobles)
 
 
-## Demo
+## Deploy
 
 [Ir al sitio Tecno Store](https://cristianabelrobles.github.io/tecno_store/)
 
@@ -50,11 +50,9 @@ Cristian Robles - [Repositorio](https://github.com/CristianAbelRobles)
 
 ![App Carrito Vacio](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_12.jpg?alt=media&token=b6c4a982-c56c-4570-ba74-e3b36a22e9be)
 
-## DEMO GIF
+## Demo
 
 ![](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/app-demo.gif?alt=media&token=ebac9c26-290b-4a20-8b42-98961f2fb09a)
-
-ENLACE AL GIF SI NO CARGA [Enlace a GIF DEMO]([https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/app.gif?alt=media&token=fb500264-c97f-4ad0-ac28-d85f40893571](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/app-demo.gif?alt=media&token=ebac9c26-290b-4a20-8b42-98961f2fb09a))
 
 ## Estructura de directorios
 
