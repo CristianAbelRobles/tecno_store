@@ -1,5 +1,4 @@
 import { Container, Button } from "react-bootstrap"
-import { Fade } from "react-awesome-reveal"
 import { Link } from "react-router-dom"
 
 function CartEmpty() {
@@ -16,11 +15,7 @@ function CartEmpty() {
 		</Container>
 	)
 }
-{/* <img
-	className=" w-20"
-	src="./image/carrito.svg"
-	alt="First slide"
-/> */}
+
 export default CartEmpty
 
 

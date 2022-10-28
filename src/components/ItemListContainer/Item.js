@@ -25,7 +25,6 @@ const Item = ( { product }) => {
                             <Button className='customButomBlue'>VER DETALLE</Button>
                         </Link>
                     </Card.Text>
-                    
                 </Card.Body>
             </Card>
         </>

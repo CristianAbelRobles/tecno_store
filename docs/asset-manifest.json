@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tecno_store/static/css/main.92249cc8.css",
-    "main.js": "/tecno_store/static/js/main.f5c5eaf5.js",
+    "main.css": "/tecno_store/static/css/main.1e43378a.css",
+    "main.js": "/tecno_store/static/js/main.0e43c422.js",
     "static/js/787.91989983.chunk.js": "/tecno_store/static/js/787.91989983.chunk.js",
     "index.html": "/tecno_store/index.html",
-    "main.92249cc8.css.map": "/tecno_store/static/css/main.92249cc8.css.map",
-    "main.f5c5eaf5.js.map": "/tecno_store/static/js/main.f5c5eaf5.js.map",
+    "main.1e43378a.css.map": "/tecno_store/static/css/main.1e43378a.css.map",
+    "main.0e43c422.js.map": "/tecno_store/static/js/main.0e43c422.js.map",
     "787.91989983.chunk.js.map": "/tecno_store/static/js/787.91989983.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92249cc8.css",
-    "static/js/main.f5c5eaf5.js"
+    "static/css/main.1e43378a.css",
+    "static/js/main.0e43c422.js"
   ]
 }

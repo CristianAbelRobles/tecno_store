@@ -21,7 +21,7 @@ const ItemDetail = ({ product }) => {
         <div className="card mb-3">
             <div className="row g-0">
                 <div className="col-md-8">
-                    <img src={product.pictureUrl} className="img-fluid rounded-start" alt="..."/>
+                    <img src={product.pictureUrl} className="img-fluid rounded-start" alt={product.name}/>
                 </div>
                 <div className="col-md-4 d-flex flex-column text-center">
                     <div className="card-body">
@@ -41,18 +41,18 @@ const ItemDetail = ({ product }) => {
                                             ) : (
                                                 <>
                                                     <Link to="/cart" className="mt-3">
-                                                        <Button variant="success" className='customButomGreen'> TERMINAR COMPRA</Button>
+                                                        <Button variant="success" className='customButomGreen'><i class="bi bi-cart-check"></i> TERMINAR COMPRA</Button>
                                                     </Link>
                                                     <Link to="/" className="mt-3">
-                                                        <Button className='customButomBlue'> SEGUIR COMPRANDO</Button>
+                                                        <Button className='customButomBlue'><i class="bi bi-arrow-left"></i> SEGUIR COMPRANDO</Button>
                                                     </Link>
                                                 </>
                                             )
                                     ) : (
                                         <>
-                                            <span className="fs-3 bg-danger">Sin Stock Disponible</span>
+                                            <span className="fs-3 bg-danger p-1 my-5"><i class="bi bi-exclamation-square"></i> Sin Stock Disponible</span>
                                             <Link to="/" className="mt-3 text-center">
-                                                <Button className='customButomBlue'> SEGUIR COMPRANDO</Button>
+                                                <Button className='customButomBlue'><i class="bi bi-arrow-left"></i> SEGUIR COMPRANDO</Button>
                                             </Link>
                                         </>
                                 )

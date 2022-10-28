@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Container, Spinner } from "react-bootstrap";
+import { Container, Spinner } from "react-bootstrap";
 import { useParams } from 'react-router-dom';
 import { getProduct } from "../../utils/Products";
 import ItemDetail from "./ItemDetail";
@@ -22,11 +22,11 @@ const ItemDetailContainer = () => {
         <>
             {loading ? (
                 <Container className="text-center">
-                    <Spinner as="span" animation="border" size="lg" role="status" aria-hidden="true" />CARGANDO PRODUCTO ...
+                    <Spinner as="span" animation="border" size="xl" role="status" aria-hidden="true" /> CARGANDO PRODUCTO ...
                 </Container>
             ) : (
                 <Container>
-                    <h1 className="text-center my-5">DETALLE DEL PRODUCTO</h1>
+                    <h1 className="text-center my-3"> DETALLE DEL PRODUCTO</h1>
                     {product && <ItemDetail product={product} />}
                 </Container> 
             )}  

@@ -94,6 +94,7 @@ const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail
             <Modal.Footer className="justify-content-center">
               <Link to='/'>
                 <Button className="fs-4" variant="primary">
+                  <i class="bi bi-arrow-left"></i> 
                   VOLVER AL INICIO
                 </Button>
               </Link>

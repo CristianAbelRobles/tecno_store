@@ -1,8 +1,6 @@
 
 import './footer.css'; 
 import { RiFacebookBoxFill, RiInstagramLine, RiYoutubeLine } from "react-icons/ri";
-import { Nav } from 'react-bootstrap';
-import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (

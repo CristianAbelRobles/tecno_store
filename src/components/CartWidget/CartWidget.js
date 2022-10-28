@@ -10,7 +10,7 @@ const CartWidget = () => {
   return (
     <>
       <Link to="/cart">
-      <RiShoppingCart2Line />
+        <RiShoppingCart2Line />
       </Link>
       {totalQuantity > 0 && (
         <Badge pill bg="danger">{totalQuantity}</Badge>
