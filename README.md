@@ -36,20 +36,6 @@ Cristian Robles - [Repositorio](https://github.com/CristianAbelRobles)
 
 [Ir al sitio Tecno Store](https://cristianabelrobles.github.io/tecno_store/)
 
-## Capturas
-
-![App Home](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_1.jpg?alt=media&token=afd5b1e5-04ed-4db6-9874-0f85863f7473)
-
-![App Categoria - PC Armadas](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_4.jpg?alt=media&token=5c14db0c-3012-480e-b9c8-72d209a0d9db)
-
-![App Carrito de Compras](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_9.jpg?alt=media&token=98668ea0-ddc7-4cb7-a758-697719a8a5e8)
-
-![App Modal Form](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_10.jpg?alt=media&token=3f6e8971-b0c4-4a33-9b6e-98608222ccc5)
-
-![App Modal OrderId](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_11.jpg?alt=media&token=fb5c53af-0014-45da-af6c-473026e6f8bb)
-
-![App Carrito Vacio](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_12.jpg?alt=media&token=b6c4a982-c56c-4570-ba74-e3b36a22e9be)
-
 ## Demo
 
 ![](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/app-demo.gif?alt=media&token=ebac9c26-290b-4a20-8b42-98961f2fb09a)
