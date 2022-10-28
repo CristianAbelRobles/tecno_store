@@ -80,13 +80,13 @@ const Cart = () => {
           <h3 className="my-5 text-end">Total: $ {total}</h3>
           <div className="text-center">
             <button onClick={() => { clear() }} className="mx-3 customButtomRed">
-            <i class="bi bi-cart-x"></i> VACIAR CARRITO
+            <i className="bi bi-cart-x"></i> VACIAR CARRITO
             </button>
             <Button as={Link} to="/" className="mx-3 customButtomBlue">
-            <i class="bi bi-arrow-left-short"></i> SEGUIR COMPRANDO
+            <i className="bi bi-arrow-left-short"></i> SEGUIR COMPRANDO
             </Button>
             <button variant="success" className="mx-3 customButtomGreen" onClick={handleOpen}>
-              <i class="bi bi-cart-check"></i> TERMINAR COMPRA
+              <i className="bi bi-cart-check"></i> TERMINAR COMPRA
             </button>
           </div>
           

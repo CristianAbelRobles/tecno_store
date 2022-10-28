@@ -33,12 +33,12 @@ const ItemCount = ({ initial, stock, onAdd }) => {
                 </div>
             </div>
             <Button variant="success" className='customButomGreen' disabled={count <= 0} onClick={handleClick}>
-                <i class="bi bi-cart-plus"></i> 
+                <i className="bi bi-cart-plus"></i> 
                 AGREGAR AL CARRITO
             </Button>
             <Link to='/'>
                 <Button className='customButomBlue' >
-                    <i class="bi bi-arrow-left-short"></i>
+                    <i className="bi bi-arrow-left-short"></i>
                     VOLVER
                 </Button>
             </Link>

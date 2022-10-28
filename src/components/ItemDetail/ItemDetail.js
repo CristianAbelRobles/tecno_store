@@ -41,18 +41,18 @@ const ItemDetail = ({ product }) => {
                                             ) : (
                                                 <>
                                                     <Link to="/cart" className="mt-3">
-                                                        <Button variant="success" className='customButomGreen'><i class="bi bi-cart-check"></i> TERMINAR COMPRA</Button>
+                                                        <Button variant="success" className='customButomGreen'><i className="bi bi-cart-check"></i> TERMINAR COMPRA</Button>
                                                     </Link>
                                                     <Link to="/" className="mt-3">
-                                                        <Button className='customButomBlue'><i class="bi bi-arrow-left"></i> SEGUIR COMPRANDO</Button>
+                                                        <Button className='customButomBlue'><i className="bi bi-arrow-left"></i> SEGUIR COMPRANDO</Button>
                                                     </Link>
                                                 </>
                                             )
                                     ) : (
                                         <>
-                                            <span className="fs-3 bg-danger p-1 my-5"><i class="bi bi-exclamation-square"></i> Sin Stock Disponible</span>
+                                            <span className="fs-3 bg-danger p-1 my-5"><i className="bi bi-exclamation-square"></i> Sin Stock Disponible</span>
                                             <Link to="/" className="mt-3 text-center">
-                                                <Button className='customButomBlue'><i class="bi bi-arrow-left"></i> SEGUIR COMPRANDO</Button>
+                                                <Button className='customButomBlue'><i className="bi bi-arrow-left"></i> SEGUIR COMPRANDO</Button>
                                             </Link>
                                         </>
                                 )
