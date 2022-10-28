@@ -44,20 +44,4 @@ const ItemCount = ({ initial, stock, onAdd }) => {
     )
 }
 
-
-
-        // <div>
-        //     <div className="">
-        //         <Button onClick={handleSubtract} variant="outline-primary fs-4" disabled={count <= initial}> - </Button>
-        //             <label className="fs-3" style={{ width: '4rem' }}>
-        //                 {count}
-        //             </label>
-        //         <Button onClick={handleAdd} variant="outline-primary fs-4" disabled={count >= stock}> + </Button>
-        //     </div>
-        //     <div>
-        //         <Button className='customButomBlue'disabled={count <= 0} onClick={handleClick}> AGREGAR AL CARRITO</Button>
-        //     </div>
-        // </div>
-
-
 export default ItemCount

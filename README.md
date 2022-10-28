@@ -38,7 +38,27 @@ Cristian Robles - [Repositorio](https://github.com/CristianAbelRobles)
 
 ## Capturas
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Home](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_1.jpg?alt=media&token=afd5b1e5-04ed-4db6-9874-0f85863f7473)
+
+![App Categoria - PC Armadas](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_4.jpg?alt=media&token=5c14db0c-3012-480e-b9c8-72d209a0d9db)
+
+![App Categoria - Monitor](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_5.jpg?alt=media&token=0cff5d28-0ef1-4657-a42a-866a9b777d5d)
+
+![App Categoria - Teclado](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_6.jpg?alt=media&token=913b3bd0-5ecf-49e9-948c-56c5df38ca51)
+
+![App Categoria - Mouse](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_7.jpg?alt=media&token=8af47c7c-f44f-476c-a625-53e43dc3d74c)
+
+![App Carrito de Compras](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_9.jpg?alt=media&token=98668ea0-ddc7-4cb7-a758-697719a8a5e8)
+
+![App Modal Form](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_10.jpg?alt=media&token=3f6e8971-b0c4-4a33-9b6e-98608222ccc5)
+
+![App Modal OrderId](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_11.jpg?alt=media&token=fb5c53af-0014-45da-af6c-473026e6f8bb)
+
+![App Carrito Vacio](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/screenshot_12.jpg?alt=media&token=b6c4a982-c56c-4570-ba74-e3b36a22e9be)
+
+## GIF
+
+![App GIF](https://firebasestorage.googleapis.com/v0/b/tecno-store-cr.appspot.com/o/app.gif?alt=media&token=fb500264-c97f-4ad0-ac28-d85f40893571)
 
 ## Estructura de directorios
 

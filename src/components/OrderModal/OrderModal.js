@@ -2,7 +2,6 @@ import { useContext } from "react";
 import CartContext from "../../contexts/CartContext";
 import { Alert, Button, Form, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import './orderModal.css';
 
 const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail, setNombre, setTel, isDisabled }) => {
   const { cart, total } = useContext(CartContext);
@@ -20,7 +19,7 @@ const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail
           <div class="row justify-content-around">
             <div class="col-md-6 d-flex flex-column justify-content-center">
               <h4>PRODUCTOS:</h4>
-              <ul class="">
+              <ul>
                   {cart.map((item) => (
                     <li key={item.id}>
                       <span className="mx-1">{item.quantity}</span>
@@ -43,9 +42,19 @@ const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail
                 />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Telefono</Form.Label>
+              <Form.Control 
+                requiered
+                name="tel"
+                type="text" 
+                placeholder="Ingrese telefono" 
+                onChange={ev => setTel (ev.target.value)}
+                />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email</Form.Label>
               <Form.Control 
-                requiered="true"
+                requiered
                 name="mail" 
                 type="email" 
                 placeholder="Ingrese email"
@@ -55,21 +64,11 @@ const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Repita Email</Form.Label>
               <Form.Control 
-                requiered="true"
+                requiered
                 name="repeatMail" 
                 type="email" 
                 placeholder="Repita su email"
                 onChange={ev => setRepeatMail (ev.target.value)}
-                />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Telefono</Form.Label>
-              <Form.Control 
-                requiered="true"
-                name="tel"
-                type="text" 
-                placeholder="Ingrese telefono" 
-                onChange={ev => setTel (ev.target.value)}
                 />
             </Form.Group>
             </div>

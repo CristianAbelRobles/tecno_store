@@ -2,10 +2,6 @@
     border-radius: 0;
 }
 
-td .card-img-top{
-  border-radius: 5px;
-}
-
 td svg:hover{
   cursor: pointer;
 }

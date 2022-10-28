@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import { getAllProducts, getProductsByCategory } from '../../utils/Products';
-import { Button, Spinner } from 'react-bootstrap';
+import { Spinner } from 'react-bootstrap';
 
 const ItemListContainer = ({ greeting }) => {
   const { categoryId } = useParams();
