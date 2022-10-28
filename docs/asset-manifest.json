@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tecno_store/static/css/main.1e43378a.css",
+    "main.js": "/tecno_store/static/js/main.28b1a166.js",
+    "static/js/787.91989983.chunk.js": "/tecno_store/static/js/787.91989983.chunk.js",
+    "index.html": "/tecno_store/index.html",
+    "main.1e43378a.css.map": "/tecno_store/static/css/main.1e43378a.css.map",
+    "main.28b1a166.js.map": "/tecno_store/static/js/main.28b1a166.js.map",
+    "787.91989983.chunk.js.map": "/tecno_store/static/js/787.91989983.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e43378a.css",
+    "static/js/main.28b1a166.js"
+  ]
+}
