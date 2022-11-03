@@ -15,9 +15,9 @@ const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail
       <Modal.Body>
       {!orderId && (
         <>
-        <div class="container-fluid">
-          <div class="row justify-content-around">
-            <div class="col-md-6 d-flex flex-column justify-content-center">
+        <div className="container-fluid">
+          <div className="row justify-content-around">
+            <div className="col-md-6 d-flex flex-column justify-content-center">
               <h4>PRODUCTOS:</h4>
               <ul>
                   {cart.map((item) => (
@@ -30,7 +30,7 @@ const OrderModal = ({ showModal, onClose, onBuy, orderId, setMail, setRepeatMail
               </ul>
               <h5 className="my-2">Total: $ {total}</h5>
             </div>
-            <div class="col-md-6 border-left border-danger">
+            <div className="col-md-6 border-left border-danger">
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Nombre</Form.Label>
               <Form.Control 
